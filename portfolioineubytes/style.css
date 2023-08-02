@@ -1,0 +1,365 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #080808;
+  color: #fff;
+}
+#header{
+  width:100%;
+  height: 100vh;
+  background-image: url(images/aa.gif);
+  background-size: cover;
+  background-position:center ;
+
+}
+.container{
+  padding: 10px 10%;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+  width: 170px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size:  22px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+
+
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+  
+  /*margin-left: 25%;*/
+}
+header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span{
+  color: #00eeff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
+    animation: glowing-border 2s infinite alternate;
+    box-sizing: content-box;
+
+    
+}
+#about{
+  padding: 80px,0;
+  color : #ababab;
+}
+
+
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.aboutcol1{
+  flex-basis: 35%;
+}
+.aboutcol1 img{
+  width:100%;
+  border-radius: 15px;
+}
+.aboutcol2{
+  flex-basis: 60%;
+}
+
+.subtitle{
+  font-size: 45px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 40%;
+  margin-bottom: 2%;
+  
+   
+    
+      font-size: 48px; /* Adjust the font size as desired */
+      color: #fff; /* Set the text color */
+      text-shadow: 0 0 10px #fff; /* Set the initial text shadow */
+      animation: glow-animation 1s ease-in-out infinite alternate; /* Apply the animation */
+    
+
+ 
+}
+.subtitle p{
+  align-content: justify;
+  
+ 
+
+}
+.aboutcol2 p{
+  font-size: 20px;
+  text-align: justify;
+}
+#Skills{
+  padding: 30px 0;
+}
+.ski{
+  font-size: 45px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 42%;
+  margin-bottom: 4%;
+  font-size: 48px; /* Adjust the font size as desired */
+      color: #fff; /* Set the text color */
+      text-shadow: 0 0 10px #fff; /* Set the initial text shadow */
+      animation: glow-animation 1s ease-in-out infinite alternate; /* Apply the animation */
+}
+.imgcon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px;  
+  margin-left: 200px;
+}
+#portfolio{
+  padding: 50px,0;
+
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background: linear-gradient(rgba(0,0,0,0.6),#474545);
+}
+.pro{
+  font-size: 45px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 42%;
+  margin-bottom: 2%;
+  margin-top: 25px;
+  font-size: 48px; 
+      color: #fff; 
+      text-shadow: 0 0 10px #fff; 
+      animation: glow-animation 1s ease-in-out infinite alternate; 
+}
+.project{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+.card{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.card .content {
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 1rem;
+  background-color: rgb(165, 198, 130);
+  color: var(--main-fonts-color);
+  font-family: var(--main-font-family);
+  cursor: pointer;
+}
+.card img{
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  display: block;
+
+  
+  
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+  margin-left: 500px;
+}
+.btn:hover{
+  background: #ff004f;
+}
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+}
+
+
+
+.contactright form{
+  width: 100%;
+}
+form input,form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+ .btn2{
+  padding: 14px,60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.con{
+  font-size: 45px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 42%;
+  margin-top: 20px;
+  margin-bottom: 4%;
+  font-size: 48px; /* Adjust the font size as desired */
+      color: #fff; /* Set the text color */
+      text-shadow: 0 0 10px #fff; /* Set the initial text shadow */
+      animation: glow-animation 1s ease-in-out infinite alternate; /* Apply the animation */
+}
+.contactright{
+  
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+@media only screen and (max-width:600px){
+  #header{
+    background-image: url(images/aa.gif);
+  }
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .subtitle , .ski , .pro{
+    font-size: 40px;
+    
+  }
+  .aboutcol1 img{
+    width: 60%;
+    height: 200px;
+    text-align: center;
+  }
+  .subtitle  , .ski , .pro{
+
+    margin-left: 90px;
+  }
+  .aboutcol2 p{
+    font-size: 11px;
+  }
+  .aboutcol1, .aboutcol2{
+    flex-basis: 100%;
+  }
+  .aboutcol1{
+    margin-bottom: 30px;
+  }
+  .aboutcol2{
+    font-size: 11px;
+  }
+  .pro {
+    margin-left: 100px;
+  }
+  .card{
+    width: 100%;
+  border-radius: 10px;
+  height: 200px;
+
+  }
+  .con{
+    margin-left: 90px;
+    margin-top: 25px;
+  }
+  .btn{
+    margin-left: 10%;
+  }
+  .imgcon {
+    display: grid;
+    
+    margin-top: 50px;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: -6px;
+}
+.pic{
+  max-width: 100px;
+}
+.pic img{
+  max-width: 100px;
+}
+}
+
+
+
